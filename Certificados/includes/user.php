@@ -13,7 +13,6 @@
         //This function validated if a user exist inside the DB.
         public function userExists($user)
         {
-            echo $user;
             $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE username = :user');
             $query->execute(['user' => $user]);
     
@@ -31,7 +30,7 @@
             $query->execute(['user' => $user]);
     
             foreach ($query as $currentUser) {
-                $this->firstname = $currentUser['firstname'];
+                $this->firstname = $currentUser['name'];
                 $this->lastname = $currentUser['lastname'];
                 $this->username = $currentUser['username'];
             }
@@ -40,7 +39,7 @@
         //This function return the firstname,lastname from a user from data base .
         public function getNombre()
         {
-            return ($this->firstname ." " .  $this->lastname);
+            return $this->firstname;
         }
 
 
