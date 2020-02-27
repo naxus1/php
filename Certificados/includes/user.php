@@ -11,10 +11,11 @@
         private $username;
 
         //This function validated if a user exist inside the DB.
-        public function userExists($username)
+        public function userExists($user)
         {
+            echo $user;
             $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE username = :user');
-            $query->execute(['user' => $username]);
+            $query->execute(['user' => $user]);
     
             if($query->rowCount()){
                 return true;
