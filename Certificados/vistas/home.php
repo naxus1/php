@@ -18,7 +18,8 @@
     </div>
 
     <section>
-        <h1>Bienvenido <?php echo $user->getNombre(); ?> </h1>
+        <h1>Hola <?php  $userData = $user->getNombre(); echo strtolower($userData[0]) ." ". strtolower($userData[1]);?> </h1>
+        <h1><?php $user->getUserCoursesAprov($userData[2])?></h1>
     </section>
     
 </body>
