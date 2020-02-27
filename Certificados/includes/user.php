@@ -6,7 +6,7 @@
 
     class User extends DB {
 
-        private $name;
+        private $firstname;
         private $lastname;
         private $username;
 
@@ -30,13 +30,13 @@
             $query->execute(['user' => $user]);
     
             foreach ($query as $currentUser) {
-                $this->name = $currentUser['firstname'];
+                $this->firstname = $currentUser['firstname'];
                 $this->lastname = $currentUser['lastname'];
                 $this->username = $currentUser['username'];
             }
         }
 
-        //This function return the firstname,lastname and username from a user from data base .
+        //This function return the firstname,lastname from a user from data base .
         public function getNombre()
         {
             return ($this->firstname ." " .  $this->lastname);
