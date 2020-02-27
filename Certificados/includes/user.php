@@ -37,9 +37,11 @@
         }
 
         //This function return the firstname,lastname from a user from data base .
-        public function getNombre()
+        public function getDatos()
         {
-            return $this->firstname;
+            $datosUser = array();
+            array_push($datosUser, $this->firstname, $this->lastname, $this->username);
+            return $datosUser;
         }
 
 
