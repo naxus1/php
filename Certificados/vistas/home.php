@@ -18,8 +18,21 @@
     </div>
 
     <section>
-        <h1>Hola <?php  $userData = $user->getNombre(); echo strtolower($userData[0]) ." ". strtolower($userData[1]);?> </h1>
-        <h1><?php $user->getUserCoursesAprov($userData[2])?></h1>
+        <h1>Hola <?php  $userData = $user->getData(); echo strtolower($userData[0]) ." ". strtolower($userData[1]);?> </h1>
+        <h2>
+            <?php 
+               $query = $user->GetUserCourses($userData[2]);
+               while ($row = $query->fetch())
+               {
+                   echo "Nombre: {$row["fullname"]} <br>";
+                   echo "Ciudad: {$row["note"]} <br><br>";
+            ?>
+                <a href="url">link text</a>
+            <?php
+               }
+            ?>
+            ?>
+        </h2>
     </section>
     
 </body>
