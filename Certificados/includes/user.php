@@ -30,21 +30,28 @@
             $query->execute(['user' => $user]);
     
             foreach ($query as $currentUser) {
-                $this->firstname = $currentUser['name'];
+                $this->firstname = $currentUser['firstname'];
                 $this->lastname = $currentUser['lastname'];
                 $this->username = $currentUser['username'];
             }
         }
 
-        //This function return the firstname,lastname from a user from data base .
-        public function getNombre()
+        //This function return the firstname,lastname and username from a user from data base .
+        public function getData()
         {
-            return $this->firstname;
+            $datosUser = array();
+            array_push($datosUser, $this->firstname, $this->lastname, $this->username);
+            return $datosUser;
         }
 
-
-
+        //This function returns the courses from a user whose grade is greater to 90.
+        public function GetUserCourses($username)
+        {
+            $finalNote = 90;
+            $query = $this->connect()->prepare('SELECT * FROM curses WHERE username= :user AND note >= :finalnote');
+            $query->setFetchMode(PDO::FETCH_ASSOC);
+            $query->execute(['user' => $username, 'finalnote' => $finalNote]);
+            return $query;
+        }
     }
-
-
 ?>
