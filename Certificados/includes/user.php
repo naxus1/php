@@ -53,5 +53,13 @@
             $query->execute(['user' => $username, 'finalnote' => $finalNote]);
             return $query;
         }
+
+        public function capitalWords($mytext)
+        {
+            $text = strtolower($mytext);
+            $text = ucwords($text);
+            return $text;
+        }
+
     }
 ?>
