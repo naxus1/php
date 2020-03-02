@@ -28,8 +28,6 @@ class MYPDF extends TCPDF {
 // create new PDF document
 $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-
-
 // set default monospaced font
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
@@ -38,15 +36,10 @@ $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
 $pdf->SetHeaderMargin(0);
 $pdf->SetFooterMargin(0);
 
-
-
 // set image scale factor
 $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
 // ---------------------------------------------------------
-
-// set font
-$pdf->SetFont('times', '', 48);
 
 // add a page
 $pdf->AddPage('L');
@@ -55,12 +48,8 @@ $pdf->AddPage('L');
 $html = '<p style="font-family:DejaVuSans;font-size:40pt; color:#FF9500">' .$name. '</p>';
 $pdf->writeHTMLCell(200, 50, 17, 70, $html, 0, 1, 0, true, '', true);
 
-
 $html = '<p style="font-family:DejaVuSans;font-size:23pt;font-weight:normal ">' .$course. '.'.'</p>';
 $pdf->writeHTMLCell(200, 30, 17, 135, $html, 0, 1, 0, false, '', false);
-
-
-
 
 // ---------------------------------------------------------
 
