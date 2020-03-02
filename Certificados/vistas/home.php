@@ -21,16 +21,18 @@
         <h1>Hola <?php  $userData = $user->getData(); echo strtolower($userData[0]) ." ". strtolower($userData[1]);?> </h1>
         <h2>
             <?php 
-               $query = $user->GetUserCourses($userData[2]);
-               while ($row = $query->fetch())
-               {
-                   echo "Nombre: {$row["fullname"]} <br>";
-                   echo "Ciudad: {$row["note"]} <br><br>";
-            ?>
-                <a href="url">link text</a>
-            <?php
-               }
-            ?>
+                $nombre = $user->capitalWords($userData[0]);
+                $apellido = $user->capitalWords($userData[1]);
+                $fullname= $nombre . " " . $apellido;
+                $query = $user->GetUserCourses($userData[2]);
+                while ($row = $query->fetch())
+                {
+                    echo "Nombre: {$row["fullname"]} <br>";
+                    echo "Ciudad: {$row["note"]} <br><br>";
+                    $course = $user->capitalWords($row["fullname"]);
+                    echo "<a href='certificados/includes/pdf.php?a=$fullname&b=$course' target='_blank'>Enviar variables</a>";
+                }
+
             ?>
         </h2>
     </section>
