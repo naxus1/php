@@ -26,7 +26,7 @@
         }
         else
         {
-            $errorLogin = "Nombre de usuario y/o password es incorrecto";
+            $errorLogin = "Cédula incorrecta o sin certificados que descargar";
             include_once 'vistas/login.php';
         }
     }
