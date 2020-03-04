@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="//www.independence.com.co/wp-content/uploads/2016/05/32x32.png" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="//www.independence.com.co/wp-content/uploads/2016/05/57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//www.independence.com.co/wp-content/uploads/2016/05/144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//www.independence.com.co/wp-content/uploads/2016/05/72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//www.independence.com.co/wp-content/uploads/2016/05/144x144.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
@@ -30,7 +36,7 @@
                     echo "Nombre: {$row["fullname"]} <br>";
                     echo "Ciudad: {$row["note"]} <br><br>";
                     $course = $user->capitalWords($row["fullname"]);
-                    echo "<a href='certificados/includes/pdf.php?a=$fullname&b=$course' target='_blank'>Enviar variables</a>";
+                    echo "<a href='includes/pdf.php?a=$fullname&b=$course' target='_blank'>Enviar variables</a>";
                 }
 
             ?>
