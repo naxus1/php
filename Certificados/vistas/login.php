@@ -98,7 +98,7 @@
             <div class="col-lg-6 col-lg-offset-right-1 col-md-6 col-md-offset-right-1 col-sm-12 col-xs-12 no-padding">
                 <div class="mlt-content">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#register" data-toggle="tab">Digite su número de cedula</a></li>
+                        <li class="active"><a href="#register" data-toggle="tab">Ingreso</a></li>
                     </ul>
                     <br>
                     <br>
@@ -122,7 +122,7 @@
                                     <div class="col-lg-10 col-lg-offset-1 col-lg-offset-right-1 col-md-10 col-md-offset-1 col-md-offset-right-1 col-sm-12 col-xs-12 pull-right ">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                             <input class="mdl-textfield__input" type="text" name="username" id="username">
-                                            <label class="mdl-textfield__label" for="username">Cedula</label>
+                                            <label class="mdl-textfield__label" for="username">Digita tu cédula</label>
                                         </div>
                                     </div>
 
