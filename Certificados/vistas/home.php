@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//www.independence.com.co/wp-content/uploads/2016/05/144x144.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//www.independence.com.co/wp-content/uploads/2016/05/72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//www.independence.com.co/wp-content/uploads/2016/05/144x144.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="../css/style_home.css">
     
 
@@ -87,7 +87,7 @@
 <!-- End Course list -->
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
 
 </body>
 </html>
