@@ -85,6 +85,20 @@
     </div>
 <!-- End Course list -->
 
+<br>
+<br>
+<br>
+
+<footer class="page-footer">
+          <div class="container">
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Derechos Reservados - Independence Drilling S.A.
+            </div>
+          </div>
+        </footer>
+
 
     <script src="../js/materialize.min.js"></script>
 </body>
