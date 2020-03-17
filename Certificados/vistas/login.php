@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//www.independence.com.co/wp-content/uploads/2016/05/144x144.png">
 
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/material.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="fonts/fontello/css/fontello.css" rel="stylesheet" />
@@ -98,7 +98,7 @@
             <div class="col-lg-6 col-lg-offset-right-1 col-md-6 col-md-offset-right-1 col-sm-12 col-xs-12 no-padding">
                 <div class="mlt-content">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#register" data-toggle="tab">Digite su número de cedula</a></li>
+                        <li class="active"><a href="#register" data-toggle="tab">Ingreso</a></li>
                     </ul>
                     <br>
                     <br>
@@ -106,7 +106,7 @@
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade in active" id="register">
                             <!--Login form-->
-                            <form method="POST" form data-feedback='{"success": "fa-check", "error": "fa-times"}'>
+                            <form method="POST" autocomplete="off">
                                 <form>
                                     <div class="col-lg-10 col-lg-offset-1 col-lg-offset-right-1 col-md-10 col-md-offset-1 col-md-offset-right-1 col-sm-12 col-xs-12 pull-right ">                                           
                                         <p class="error-cedula">
@@ -122,7 +122,7 @@
                                     <div class="col-lg-10 col-lg-offset-1 col-lg-offset-right-1 col-md-10 col-md-offset-1 col-md-offset-right-1 col-sm-12 col-xs-12 pull-right ">
                                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                             <input class="mdl-textfield__input" type="text" name="username" id="username">
-                                            <label class="mdl-textfield__label" for="username">Cedula</label>
+                                            <label class="mdl-textfield__label" for="username">Digita tu cédula</label>
                                         </div>
                                     </div>
 
@@ -143,10 +143,10 @@
         <!--container-->
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js "></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
-    <script src="libs/mdl/material.min.js "></script>
-    <script src="../js/validate.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/material.min.js"></script>
+
 
 </body>
 </html>
