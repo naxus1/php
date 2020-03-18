@@ -22,7 +22,7 @@
     <div class="nav-wrapper">
     <img class="brand-logo" src="../img/logo_independence.png" alt="logo Independence" width="13%">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li style="padding-top: 48px;"> <img src="../img/phone-call.png" alt="telefono" width="2%">  &nbsp5875333 Ext. 1907 &nbsp&nbsp <img src="../img/mail.png" alt="telefono" width="2%">  &nbspmesadeayuda@independence.com.co</li>
+            <li class="center-align"> <img src="../img/phone-call.png" alt="telefono" width="2%">  &nbsp5875333 Ext. 1907 &nbsp&nbsp <img src="../img/mail.png" alt="telefono" width="2%">  &nbspmesadeayuda@independence.com.co</li>
             <li><a href="includes/logout.php">Cerrar sesión</a></li>
         </ul>
     </div>
@@ -89,15 +89,13 @@
 <br>
 <br>
 
-<footer class="page-footer">
-          <div class="container">
-          </div>
-          <div class="footer-copyright">
+    <footer class="page-footer center-align">
+        <div class="footer-copyright">
             <div class="container">
             Derechos Reservados - Independence Drilling S.A.
             </div>
-          </div>
-        </footer>
+        </div>
+    </footer>
 
 
     <script src="../js/materialize.min.js"></script>
